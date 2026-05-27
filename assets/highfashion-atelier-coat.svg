@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f5efe5"/>
+      <stop offset="1" stop-color="#2b2118"/>
+    </linearGradient>
+    <linearGradient id="coat" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8f0e2"/>
+      <stop offset=".55" stop-color="#c9a978"/>
+      <stop offset="1" stop-color="#24180f"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="34" stdDeviation="28" flood-color="#000" flood-opacity=".38"/>
+    </filter>
+  </defs>
+  <rect width="900" height="1100" rx="70" fill="url(#bg)"/>
+  <g filter="url(#shadow)">
+    <path d="M307 179h286l42 95 112 104-82 126-55-44 42 473H248l42-473-55 44-82-126 112-104z" fill="url(#coat)"/>
+    <path d="M372 180l78 134 78-134z" fill="#18120d"/>
+    <path d="M450 314v620" stroke="#f8ead4" stroke-width="18" opacity=".55"/>
+    <path d="M298 333h304" stroke="#1a130e" stroke-width="12" opacity=".55"/>
+    <path d="M335 506h230" stroke="#f9ead2" stroke-width="10" opacity=".5"/>
+    <text x="450" y="722" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="72" fill="#fff6e8">HIGH</text>
+    <text x="450" y="790" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="62" fill="#1e150f">FASHION</text>
+  </g>
+</svg>

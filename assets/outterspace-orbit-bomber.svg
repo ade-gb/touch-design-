@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100">
+  <defs>
+    <radialGradient id="space" cx=".45" cy=".35" r=".8">
+      <stop offset="0" stop-color="#6ef7ff"/>
+      <stop offset=".42" stop-color="#151946"/>
+      <stop offset="1" stop-color="#05050d"/>
+    </radialGradient>
+    <linearGradient id="jacket" x1="0" x2="1">
+      <stop offset="0" stop-color="#0b102c"/>
+      <stop offset=".5" stop-color="#2f3296"/>
+      <stop offset="1" stop-color="#0a0d22"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="34" stdDeviation="28" flood-color="#000" flood-opacity=".45"/>
+    </filter>
+  </defs>
+  <rect width="900" height="1100" rx="70" fill="url(#space)"/>
+  <circle cx="680" cy="210" r="72" fill="#f4d35e"/>
+  <circle cx="650" cy="194" r="72" fill="#151946"/>
+  <g filter="url(#shadow)">
+    <path d="M290 250h320l65 122 102 70-66 152-78-48 38 372H229l38-372-78 48-66-152 102-70z" fill="url(#jacket)"/>
+    <path d="M345 250l105 140 105-140z" fill="#090b18"/>
+    <path d="M236 416c145 80 282 80 428 0" fill="none" stroke="#6ef7ff" stroke-width="20"/>
+    <path d="M301 605h298" stroke="#fff" stroke-width="8" opacity=".35"/>
+    <text x="450" y="746" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="58" fill="#6ef7ff">OUTTERSPACE</text>
+    <text x="450" y="808" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="48" fill="#f4d35e">LUXURY</text>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#8fb5ff"/>
+      <stop offset=".58" stop-color="#1b315f"/>
+      <stop offset="1" stop-color="#060914"/>
+    </linearGradient>
+    <linearGradient id="denim" x1="0" x2="1">
+      <stop offset="0" stop-color="#6a95d8"/>
+      <stop offset=".5" stop-color="#243f78"/>
+      <stop offset="1" stop-color="#101b36"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="34" stdDeviation="28" flood-color="#000" flood-opacity=".42"/>
+    </filter>
+  </defs>
+  <rect width="900" height="1100" rx="70" fill="url(#bg)"/>
+  <g filter="url(#shadow)">
+    <path d="M285 210h330l60 118 95 90-84 130-66-52 36 412H244l36-412-66 52-84-130 95-90z" fill="url(#denim)"/>
+    <path d="M355 210l95 128 95-128z" fill="#0a1022"/>
+    <path d="M288 420h324M320 570h260M350 720h200" stroke="#bcd3ff" stroke-width="10" opacity=".45"/>
+    <path d="M452 340v568" stroke="#d8e6ff" stroke-width="11" opacity=".55"/>
+    <text x="450" y="682" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="86" fill="#fff">ZTTW</text>
+    <text x="450" y="748" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="42" fill="#bcd3ff">COLLECTIVE</text>
+  </g>
+</svg>

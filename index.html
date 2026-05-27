@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gesture Brand Market</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css?v=product-rotate" />
+  </head>
+  <body>
+    <main class="shop-shell" aria-label="Gesture controlled shopping experience">
+      <video id="cameraFeed" class="camera-feed" playsinline muted></video>
+      <canvas id="handCanvas" class="hand-canvas"></canvas>
+
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Touchless multi-brand market</p>
+          <h1>Gesture Brand Market</h1>
+        </div>
+        <div class="toolbar">
+          <button id="cameraButton" class="control-button primary" type="button">Camera</button>
+          <button id="fallbackButton" class="control-button" type="button">Pointer</button>
+        </div>
+      </header>
+
+      <section class="gesture-stage" id="gestureStage">
+        <button class="gesture-zone zone-prev" data-action="prev" type="button">
+          <span>Previous</span>
+        </button>
+        <button class="gesture-zone zone-next" data-action="next" type="button">
+          <span>Next</span>
+        </button>
+        <button class="gesture-zone zone-wishlist" data-action="wishlist" type="button">
+          <span>Wishlist</span>
+        </button>
+        <button class="gesture-zone zone-cart" data-action="cart" type="button">
+          <span>Add to cart</span>
+        </button>
+        <button class="gesture-zone zone-checkout" data-action="checkout" type="button">
+          <span>Checkout</span>
+        </button>
+
+        <article class="product-card" id="productCard">
+          <div class="product-visual">
+            <img id="productImage" alt="" />
+            <div class="scan-line"></div>
+          </div>
+          <div class="product-copy">
+            <div class="product-meta">
+              <span id="productCategory"></span>
+              <span id="productIndex"></span>
+            </div>
+            <h2 id="productName"></h2>
+            <p id="productDescription"></p>
+            <div class="product-detail-row">
+              <strong id="productPrice"></strong>
+              <span id="productSignal"></span>
+            </div>
+            <div class="variant-row" id="variantRow"></div>
+          </div>
+        </article>
+
+        <div class="hand-cursor" id="handCursor" aria-hidden="true">
+          <span></span>
+        </div>
+      </section>
+
+      <aside class="cart-panel" aria-label="Shopping cart">
+        <div class="panel-head">
+          <p class="eyebrow">Five-brand lineup</p>
+          <h2>Purchase Flow</h2>
+        </div>
+        <div class="brand-rail" id="brandRail" aria-label="Brands"></div>
+        <div class="status-card">
+          <span id="statusText">Pointer mode ready. Hold a zone to select, or swipe across the stage to browse.</span>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-summary">
+          <div>
+            <span>Total</span>
+            <strong id="cartTotal">$0</strong>
+          </div>
+          <button id="checkoutButton" class="checkout-button" type="button" disabled>Checkout</button>
+        </div>
+        <div id="confirmation" class="confirmation" hidden>
+          <strong>Purchase queued</strong>
+          <span>Your touchless order is ready for fulfillment.</span>
+        </div>
+      </aside>
+    </main>
+
+    <script type="module" src="./script.js?v=camera-diagnostics"></script>
+  </body>
+</html>

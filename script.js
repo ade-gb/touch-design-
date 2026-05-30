@@ -623,6 +623,7 @@ async function startCameraMode() {
     els.video.srcObject = cameraStream;
     await els.video.play();
     els.video.classList.add("live");
+    document.body.classList.add("camera-live");
   } catch (error) {
     console.error(error);
     setMode("pointer");
@@ -692,6 +693,7 @@ function stopCamera() {
     cameraStream = undefined;
   }
   els.video.classList.remove("live");
+  document.body.classList.remove("camera-live");
   els.video.srcObject = null;
   ctx?.clearRect(0, 0, els.canvas.width, els.canvas.height);
 }
